@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am honored to have been invited to become an ACM Professional Member (2023~2024).
+I am honored to have been invited to become an ACM Professional Member (2023-2024).
