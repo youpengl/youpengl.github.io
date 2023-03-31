@@ -19,4 +19,4 @@ Welcome😊! I am currently a second-year master's student at the Guangzhou Inst
 
 My research interest focuses on the robustness and fairness of **trustworthy AI**, particularly in the context of **federated learning**, for the application in real-world scenarios involving large-scale, heterogeneous clients, such as [human activity recognition](https://dl.acm.org/doi/pdf/10.1145/3580795).
 
-<span style="color:red"> I plan to apply for the CS PhD program (Global🌍) for Fall 2024, and if my research interests align with your team, please feel free to contact me :)
+<span style="color:red"> I plan to apply for a CS PhD position (Global🌍) for Fall 2024, and if my research interests align with your team, please feel free to contact me :)
