@@ -12,7 +12,8 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+services: true
+social: false  # includes social icons at the bottom of the page
 ---
 
 Welcome! I am currently a second-year master's student at Guangzhou Institute of Technology, Xidian University, China, under the supervision of Prof. [Lingling An](https://scholar.google.com/citations?hl=zh-CN&user=DZuZUBYAAAAJ&view_op=list_works&sortby=pubdate). Before pursuing my graduate studies, I obtained a Bachelor's degree in Information Security from Nanjing University of Information Science and Technology.

@@ -52,6 +52,12 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
+          <!-- Services -->
+          {% if page.services -%}
+            <h2><a href="{{ '/services/' | relative_url }}" style="color: inherit;">Services</a></h2>
+            {%- include services.html %}
+          {%- endif %}
+
           <!-- Social -->
           {%- if page.social %}
             <div class="social">
