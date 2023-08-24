@@ -18,6 +18,6 @@ social: false  # includes social icons at the bottom of the page
 
 Welcome! I am currently a second-year master's student at Guangzhou Institute of Technology, Xidian University, China, under the supervision of Prof. [Lingling An](https://scholar.google.com/citations?hl=zh-CN&user=DZuZUBYAAAAJ&view_op=list_works&sortby=pubdate). Before pursuing my graduate studies, I obtained a Bachelor's degree in Information Security from Nanjing University of Information Science and Technology.
 
-My research interests focus on the privacy, robustness and fairness of trustworthy AI, particularly in the context of federated learning, for the application in real-world scenarios involving large-scale, heterogeneous clients, such as [human activity recognition](https://dl.acm.org/doi/pdf/10.1145/3580795). I am very open to having in-depth discussions or collaborations with my peers.
+My research interests focus on the privacy, robustness and fairness of trustworthy AI, particularly in the context of federated learning, for the application in real-world scenarios involving large-scale, heterogeneous clients. I am very open to having in-depth discussions or collaborations with my peers.
 
 <span style="color:red"> I am planning to apply for a CS Ph.D. program in Fall 2024, and if my research interests align with your team, please feel free to contact me :)
