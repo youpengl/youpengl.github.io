@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-3-29 21:00:00-0400
+date: 2023-2-26 21:00:00-0400
 inline: true
 related_posts: false
 ---
 
-I am honored to have been invited to become an ACM Professional Member (2023-2024).
+I am delighted to share that I will embark on my CS PhD journey at The University of Texas at Dallas in Fall 2024!
