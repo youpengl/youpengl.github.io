@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2024-2-26 21:00:00-0400
+date: 2024-9-19 12:00:00-0400
 inline: true
 related_posts: false
 ---
 
-I am delighted to share that I will embark on my CS PhD journey at The University of Texas at Dallas in Fall 2024!
+Our paper on Robust Federated Learning has been accepted to the [Annual Computer Security Applications Conference (ACSAC' 2024)](https://www.acsac.org). See you in Hawaii!
+
