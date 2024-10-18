@@ -169,7 +169,7 @@
                 <tr>
                   <th scope="row">09/19/2024</th>
                   <td>
-                    Our paper “FedCAP: Robust Federated Learning via Customized Aggregation and Personalization” accepted to the <a href="https://www.acsac.org" rel="external nofollow noopener" target="_blank">Annual Computer Security Applications Conference (ACSAC’ 2024)</a>. See you in Hawaii!
+                    Our paper “<a href="https://arxiv.org/pdf/2410.13083" rel="external nofollow noopener" target="_blank">FedCAP: Robust Federated Learning via Customized Aggregation and Personalization</a>” accepted to the <a href="https://www.acsac.org" rel="external nofollow noopener" target="_blank">Annual Computer Security Applications Conference (ACSAC’ 2024)</a>. See you in Hawaii!
 
  
                   </td>
@@ -204,10 +204,11 @@
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
-            <ol class="bibliography"><li>
+            <ol class="bibliography">
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IMWUT/UbiComp</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">IMWUT/UbiComp 2023</abbr></div>
 
         <!-- Entry bib key -->
         <div id="10.1145/3580795" class="col-sm-8">
@@ -267,7 +268,80 @@
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ACSAC 2024</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="li2024fedcaprobustfederatedlearning" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">FedCAP: Robust Federated Learning via Customized Aggregation and Personalization</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Youpeng Li, Xinda Wang, Fuxun Yu, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Lichao Sun, Wenbin Zhang, Xuyu Wang' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          Mar 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://arxiv.org/abs/2410.13083" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/youpengl/FedCAP" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2410.13083"></span>
+              <span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.48550/arXiv.2410.13083" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Federated learning (FL), an emerging distributed machine learning paradigm, has been applied to various privacy-preserving scenarios. However, due to its distributed nature, FL faces two key issues: the non-independent and identical distribution (non-IID) of user data and vulnerability to Byzantine threats. To address these challenges, in this paper, we propose FedCAP, a robust FL framework against both data heterogeneity and Byzantine attacks. The core of FedCAP is a model update calibration mechanism to help a server capture the differences in the direction and magnitude of model updates among clients. Furthermore, we design a customized model aggregation rule that facilitates collaborative training among similar clients while accelerating the model deterioration of malicious clients. With a Euclidean norm-based anomaly detection mechanism, the server can quickly identify and permanently remove malicious clients. Moreover, the impact of data heterogeneity and Byzantine attacks can be further mitigated through personalization on the client side. We conduct extensive experiments, comparing multiple state-of-the-art baselines, to demonstrate that FedCAP performs well in several non-IID settings and shows strong robustness under a series of poisoning attacks.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">li2024fedcaprobustfederatedlearning</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{FedCAP: Robust Federated Learning via Customized Aggregation and Personalization}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Li, Youpeng and Wang, Xinda and Yu, Fuxun and Sun, Lichao and Zhang, Wenbin and Wang, Xuyu}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2410.13083}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">primaryclass</span> <span class="p">=</span> <span class="s">{cs.LG}</span><span class="p">,</span>
+  <span class="na">conference</span> <span class="p">=</span> <span class="s">{ Annual Computer Security Applications Conference}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{federated learning, data heterogeneity, Byzantine-robustness}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{https://doi.org/10.48550/arXiv.2410.13083}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
           </div>
 
 
@@ -289,7 +363,7 @@
     <footer class="fixed-bottom">
       <center>
       <div class="container mt-0">     
-        © Copyright 2024 Youpeng  Li. Last updated: October 15, 2024.
+        © Copyright 2024 Youpeng  Li. Last updated: October 18, 2024.
       </div>
     </center></footer>
 
