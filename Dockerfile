@@ -1,24 +1,53 @@
-FROM bitnami/minideb:latest
-Label MAINTAINER Amir Pourmand
-RUN apt-get update -y
-# add locale
-RUN apt-get -y install locales
-# Set the locale
-RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen
-ENV LANG en_US.UTF-8  
-ENV LANGUAGE en_US:en  
-ENV LC_ALL en_US.UTF-8  
+# Use official Ruby 3.3 slim image for compatibility
+FROM ruby:3.3-slim
 
-# add ruby and jekyll
-RUN apt-get install --no-install-recommends ruby-full build-essential zlib1g-dev -y 
-RUN apt-get install imagemagick -y 
-RUN apt-get clean \
-    && rm -rf /var/lib/apt/lists/
-# ENV GEM_HOME='root/gems' \
-#     PATH="root/gems/bin:${PATH}"
-RUN gem install jekyll bundler
+LABEL maintainer="Amir Pourmand"
+
+# Set locale
+RUN apt-get update -y && \
+    apt-get install -y locales && \
+    sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+ENV LANG=en_US.UTF-8  
+ENV LANGUAGE=en_US:en  
+ENV LC_ALL=en_US.UTF-8  
+
+# Install system dependencies for Jekyll and native gems (mini_racer, etc.)
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends \
+        build-essential \
+        cmake \
+        g++ \
+        pkg-config \
+        git \
+        curl \
+        python3 \
+        imagemagick \
+        unzip \
+        xz-utils \
+        libv8-dev \
+        zlib1g-dev \
+        libxml2-dev \
+        libxslt1-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Create working directory
 RUN mkdir /srv/jekyll
-ADD Gemfile /srv/jekyll
 WORKDIR /srv/jekyll
-RUN bundle install
+
+# Copy Gemfile and Gemfile.lock first (for caching)
+COPY Gemfile Gemfile.lock ./
+
+# Install bundler and gems
+RUN gem install bundler && bundle install
+
+# Copy the rest of the site
+COPY . .
+
+# Expose default Jekyll port
+EXPOSE 4000
+
+# Default command
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
