@@ -109,7 +109,7 @@
         <!-- Journal/Book title and date -->
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
-        {% if entry.type == "article" -%}
+        <!-- {% if entry.type == "article" -%}
           {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
@@ -117,22 +117,25 @@
           {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
         {%- else -%}
           {%- capture entrytype -%}{%- endcapture -%}
-        {%- endif -%}
+        {%- endif -%} -->
         {%- if entry.month -%}
           {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
         {%- endif -%}
         {%- if entry.year -%}
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
-        {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-        <div class="periodical">
+        <!-- {% assign entrytype_text = entrytype | strip_html | strip %}
+        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%} -->
+        <!-- <div class="periodical">
           {{ periodical | strip }}
-        </div>
-        <div class="periodical">
+        </div> -->
+        <!-- <div class="periodical">
           {{ entry.note | strip }}
-        </div>
-
+        </div> -->
+        <!-- {%- capture date_only -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        <div class="periodical">
+          {{ date_only | strip }} -->
+        <!-- </div> -->
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
