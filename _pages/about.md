@@ -20,4 +20,4 @@ I am a third-year PhD Candidate in the Department of Computer Science at [The Un
 
 My current research focuses on AI for software security, primarily enhancing the capabilities of LLMs/agents for software security tasks such as vulnerability detection and patch management. I am also interested in the security and safety aspects of Trustworthy AI. 
 
-*I am seeking internship opportunities, please contact me if you have any recommendations.*
+<span style="color: red;">I am seeking AI × Cybersecurity internship for Summer 2027. Please reach out if you have any openings.</span>
