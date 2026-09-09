@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our paper, "Exploring Early Vulnerability Analysis via Automatic Identification of Vulnerability-Introducing Commits" accepted to IEEE Annual Computer Security Applications Conference (**ACSAC '26**).
+Our paper, "Exploring Early Vulnerability Analysis via Automatic Identification of Vulnerability-Introducing Commits", accepted to IEEE Annual Computer Security Applications Conference (**ACSAC '26**).
 
